@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de carro</title>
+</head>
+<body>
+
+    <form action="salvar" method="POST">
+
+        <fieldset style="border:0px">
+            <legend>Dados do veículo</legend>
+            <input type="hidden" name="codigo">
+            <label>Placa</label>
+            <input type="text" placeholder="Placa"><br>
+            <label>Chassi</label>
+            <input type="tel" placeholder="Chassi"><br>
+            <label>Data de aquisição</label>
+            <input type="date"  placeholder="Data">
+        </fieldset>
+
+        <fieldset style="border:0px">
+            <legend>Possui teto solar?</legend>
+            <label><input type="radio" name="Sim" value="1"> Sim</label>
+            <label><input type="radio" name="Sim" value="2"> Não </label>
+            <!-- para ter opção de selecionar só um, coloco o value diferente -->
+        </fieldset>
+
+        <input type="submit" value="salvar">
+
+
+
+    </form>
+
+    
+</body>
+</html>
